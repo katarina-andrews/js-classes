@@ -3,18 +3,18 @@
 //  * @param {*} name - string
 //  * @param {*} age - number
 //  */
-// function Person(name, age) {
-//   this.name = name;
-//   this.age = age;
-//   this.greet = function () {
-//     console.log(`This is ${this.name}. They are ${this.age} years old.`);
-//   };
-// }
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+  this.greet = function () {
+    console.log(`This is ${this.name}. They are ${this.age} years old.`);
+  };
+}
 
-// const alice = new Person("Alice", "30");
-// alice.greet();
+const alice = new Person("Alice", "30");
+alice.greet();
 
-class Person {
+class People {
   constructor(name, age) {
     this.name = name;
     this.age = age;
@@ -28,7 +28,7 @@ class Person {
   }
 }
 
-const alice = new Person("Alice", 30);
+const allie = new People("Allie", 30);
 
-alice.greet();
-alice.haveBirthday();
+allie.greet();
+allie.haveBirthday();

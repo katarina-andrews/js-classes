@@ -21,10 +21,10 @@ class People {
     this.greet = function () {
       console.log(`This is ${this.name}. They are ${this.age} years old.`);
     };
-    this.haveBirthday = function () {
-      this.age++;
-      console.log(`Happy birthday! You are now ${this.age} years old.`);
-    };
+  }
+  haveBirthday() {
+    this.age++;
+    console.log(`Happy birthday! You are now ${this.age} years old.`);
   }
 }
 
